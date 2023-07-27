@@ -145,11 +145,12 @@ img {
   color: var(--secondary-blu-color);
 }
 
-/*------- main------- */
+/**------MAIN-------- */
 
 .hero {
   background-color: var(--primeri-black-color);
-  padding: 188px 0 188px;
+  /* padding: 188px 0 188px; */
+  padding: 112px 0 112px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -167,12 +168,17 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-bottom: 42px;
+  /* max-width: 496px;
+  margin-bottom: 42px; */
+  max-width: 320px;
+  margin-bottom: 72px; 
+
 }
 
 .hero-btn {
@@ -195,10 +201,10 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
+/* .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--secondary-blu-color);
-}
+} */
 
 /** -----princips------- */
 
@@ -209,8 +215,10 @@ img {
 
 .pr-list {
   display: flex;
+  flex-direction: column;
+  row-gap: 72px;
   flex-wrap: wrap;
-  gap: 24px;
+  
 }
 
 .visually-hidden {
@@ -263,6 +271,7 @@ img {
 /** ------What are we doing------ */
 
 .wawd {
+  display: none;
   padding-bottom: 120px;
   background-color: var(--primeri-white-color);
 }
@@ -287,11 +296,12 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-/* -----------------Our team-------------- */
+/**** -----------------Our team-------------- */
 
 .team {
   background-color: var(--secondary-white-color);
-  padding: 120px 0 120px;
+  /* padding: 120px 0 120px; */
+  padding: 96px 0 96px;
 }
 
 .team-name {
@@ -311,9 +321,11 @@ img {
 
 .team-list {
   display: flex;
+        flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
+  row-gap: 72px;
 }
 
 .team-item {
@@ -321,7 +333,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--primeri-white-color);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
   align-items: center;
   display: block;
 }
@@ -982,6 +994,43 @@ color: var(--secondary-color);
 
 
 
+  /*************MEDIA-HERO************/
+
+  /* @media screen and (max-width: 768px){
+    .hero-title{
+      max-width: 320px;
+      margin-bottom: 72px;
+    }
+  } */
+
+  @media screen and (min-width: 768px){
+    .hero-title{
+      font-style: 56px;
+      max-width: 496px;
+      margin-bottom: 36px;
+      line-height: 1.07;
+    }
+  }
+
+
+  @media screen and (min-width: 1158px){
+    .hero{
+      padding: 188px 0 188px;
+    }
+
+    .hero-title{
+      margin-bottom: 42px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .hero-btn:hover,
+    .hero-btn:focus {
+      background-color: var(--secondary-blu-color);
+    }
+  }
+
 
 
 
@@ -1013,7 +1062,10 @@ color: var(--secondary-color);
     }
 
     .pr-list{
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 24px;
+      row-gap: 72px;
     }
 
     .pr-item{
@@ -1044,6 +1096,7 @@ color: var(--secondary-color);
       background-color: var(--secondary-white-color);
       margin-bottom: 8px;
     }
+
     .pr-icons {
       width: 64px;
       height: 64px;
@@ -1051,14 +1104,22 @@ color: var(--secondary-color);
   }
 
 
+
+
+  /* ****************MEDIA-WAWD************** */
+
+  @media screen and (min-width: 1158px){
+    .wawd{
+      display: flex;
+    }
+  }
+
+
+  /**************MEDIA_TEAM******************* */
+
+
   /************** MEDIA-CUSTOMS***************  */
 
-  @media screen and (min-width: 428px){
-    .cust-item{
-
-    }
-    
-  }
   @media screen and (min-width: 768px){
     .cust-item{
       width: calc((100% - 72px) / 3)
