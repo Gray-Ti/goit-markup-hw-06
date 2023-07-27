@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <title>Mobile menu</title>
+    <link rel="stylesheet" href="modal.js/mobile-menu.js">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +23,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
@@ -56,8 +58,13 @@
             </li>
           </ul>
         </address>
+        <button class="menu-ham-icon js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="hero">
@@ -623,7 +630,66 @@
       </div>
     </div> -->
 
+        <!**** Mobil menu *****>
 
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-hamburger js-close-menu">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-clon"></use>
+            </svg>
+          </button>
+        
+          <ul class="mobile-menu">
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link-studio link">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mobile-menu-link link">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+    
+          <address class="mob-adr">
+            <ul class="mob-adr-list">
+              <li class="mob-adr-item">
+                <a class="mod-adr-link tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-adr-item">
+                <a class="mod-adr-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+    
+          <ul class="mob-icon-list">
+            <li class="mob-icon-item">
+              <a class="mob-icon-link" href=""><svg class="mob-icon-net" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link" href=""><svg class="mob-icon-net" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg></a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link" href=""><svg class="mob-icon-net width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg></a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link" href=""><svg class="mob-icon-net" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
