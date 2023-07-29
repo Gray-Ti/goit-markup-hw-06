@@ -34,6 +34,8 @@ ol {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -612,7 +614,6 @@ margin-bottom: 16px;
   cursor: pointer;
   padding: 8px 24px;
   margin: 0 auto;
-
   margin-top: 16px;
   border: none;
   border-radius: 4px;
@@ -1115,7 +1116,7 @@ color: var(--secondary-color);
   }
 
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     .pr-name{
       display: flex;
       align-items: center;
@@ -1177,6 +1178,7 @@ color: var(--secondary-color);
 
 
   /***********HEADER_MENU************ */
+
   @media screen and (min-width: 768px){
 
   .emphasis::after {
@@ -1286,7 +1288,7 @@ color: var(--secondary-color);
 
   /******************* MEDIA-FOOTER ************/
 
-  @media (max-width: 768px){
+  @media only screen and (min-width:320px) and (max-width: 767px){
     
     .footer-container {
       display: flex;
@@ -1319,7 +1321,7 @@ color: var(--secondary-color);
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1158px){
+  @media (min-width: 768px) and (max-width: 1157px){
 
     .footer {
       display: block;
@@ -1339,6 +1341,7 @@ color: var(--secondary-color);
 
     .foot-social {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       padding-left: 396px;
     }
@@ -1387,17 +1390,14 @@ color: var(--secondary-color);
       width: 264px;
     }
 
-    .footer-btn{
-      
-    }
   }
 
 /* ********************MEDIA-MODAL*********** */
-@media (max-width: 768px){
+  @media screen and (min-width: 428px) and (max-width: 767px){
   .modal{
     width: 392px;
   }
-}
+  }
 
   /*********************mobile-menu******************/
 
