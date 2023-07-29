@@ -458,7 +458,8 @@ img {
 
 .footer {
   background-color: var(--primeri-black-color);
-  padding: 100px 0 100px;
+  /* padding: 100px 0 100px; */
+  padding: 96px 0;
   
 }
 
@@ -475,7 +476,6 @@ img {
   flex-direction: column;
   /* justify-content: center; */
   /* text-align: center; */
-  margin-bottom: 72px;
   /* margin-right: 120px; */
 }
 
@@ -558,7 +558,7 @@ img {
 
 
 .foot-email {
-display: flex;
+/* display: flex; */
 /* flex-direction: column; */
 text-align: center;
 
@@ -567,14 +567,15 @@ text-align: center;
 .form-email{
   display: flex;
   /* gap: 24px; */
-  align-items: center;
+  /* align-items: center; */
   background-color: var(--primeri-black-color);
 }
 
 .form-label {
   display: flex;
-  width: 398px;
-margin-bottom: 16px;
+
+  /* width: 398px; */
+/* margin-bottom: 16px; */
 }
 
 .input-email {
@@ -614,7 +615,7 @@ margin-bottom: 16px;
   cursor: pointer;
   padding: 8px 24px;
   margin: 0 auto;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1126,7 +1127,7 @@ color: var(--secondary-color);
 
   @media screen and (min-width: 768px){
     .container{
-      max-width: 766px;
+      max-width: 768px;
     }
     .princips{
       padding-top: 96px;
@@ -1325,8 +1326,15 @@ color: var(--secondary-color);
 
     .footer {
       display: block;
-      padding-right: 24px;
-      padding-bottom: 72px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 552px;
+      gap:72px 24px;
+      align-items: baseline;
     }
 
 
@@ -1334,28 +1342,22 @@ color: var(--secondary-color);
       text-align: start;
     }
 
-    .footer-container {
-      display: flex;
-      align-items: baseline;
-    }
 
     .foot-social {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding-left: 396px;
+
     }
     .form-email {
       display: flex;
-      padding-top: 16px;
+      gap: 24px;
     }
 
     .input-email {
       width: 264px;
     }
     .textfoot {
-      text-align: left;
-      padding-top: 72px;
+      justify-content: flex-start;
+      /* text-align: left; */
+      /* padding-top: 72px; */
     }
     .footer-btn {
       text-align: center;
@@ -1389,6 +1391,7 @@ color: var(--secondary-color);
     .input-email{
       width: 264px;
     }
+
 
   }
 
