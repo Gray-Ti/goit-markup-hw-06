@@ -161,9 +161,22 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people.jpg);
+    url(../images/Dark-bg-mob.jpg);
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-mob2x.jpg);
+    background-size: cover;
+  }
 }
 
 .hero-title {
@@ -1055,6 +1068,10 @@ color: var(--secondary-color);
   }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+
   .adr-list {
     flex-wrap: wrap;
     row-gap: 12px;
@@ -1068,6 +1085,7 @@ color: var(--secondary-color);
   }
 }
 @media only screen and (min-width: 1158px) {
+
   .adr-link {
     font-size: 16px;
     line-height: 1.5;
@@ -1094,6 +1112,29 @@ color: var(--secondary-color);
   } */
 
   @media screen and (min-width: 768px){
+
+    .hero{
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab.jpg);
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tab2x.jpg);
+    background-size: cover;
+  }
+}
+
     .hero-title{
       font-size: 56px;
       max-width: 496px;
@@ -1106,7 +1147,25 @@ color: var(--secondary-color);
   @media screen and (min-width: 1158px){
     .hero{
       padding: 188px 0 188px;
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people.jpg);
     }
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-2x.jpg);
+    background-size: cover;
+  }
+}
 
     .hero-title{
       margin-bottom: 42px;
