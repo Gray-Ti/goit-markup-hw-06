@@ -658,9 +658,6 @@ text-align: center;
   border-bottom: 1px solid var(#e7e9fc);
 }
 
-
-
-
 .presentation-list {
   display: flex;
   /* justify-content: center;
@@ -1617,6 +1614,11 @@ color: var(--secondary-color);
       gap: 30px;
     }
   }
+  @media only screen and (min-width: 200px) and (max-width: 319px) {
+    .mob-icon-list{
+      gap: 10px;
+    }
+  }
   
   @media only screen and (min-width: 375px) and (max-width: 424px) {
     .mob-icon-list {
@@ -1633,7 +1635,7 @@ color: var(--secondary-color);
     }
   }
 
-  
+  /***********MOBILE-MENU******** */
   .menu-hamburger {
     display: flex;
     justify-content: center;
@@ -1766,6 +1768,8 @@ color: var(--secondary-color);
   
   .tel {
     font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     color: var(--secondary-color);
   }
   
